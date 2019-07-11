@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-areas: "header header header header" 
+                        "nav nav nav nav" 
+                        "section section section div"
+                         " aside aside aside div"
+                         "footer footer footer footer";
+
+    grid-template-rows: 20vh 7vh 40vh 40vh 10vh;
+    grid-gap: 0px;
+}
+
+header h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30pt;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header{
+    grid-area: header;
+    background-color: yellow;
+    border-bottom: 1px black solid;
+}
+
+nav{
+    grid-area: nav;
+    background-color:cornsilk;
+    border-bottom: 1px black solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 800;
+}
+
+section{
+    grid-area: section;
+    background-color: yellow;
+    border-bottom: 1px black solid;
+
+}
+
+aside{
+    grid-area: aside;
+    background-color: yellow;
+    border-bottom: 2px cornsilk solid;
+}
+
+
+div{
+    grid-area: div;
+    background-color: black;
+    border-bottom: 2px cornsilk solid;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+footer{
+    grid-area: footer;
+    background-color: black;
+    
+}
+
+nav a{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20pt;
+}
+
+div h3{
+    font-size: 25pt;
+    color: yellow;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+div input{
+    border: none;
+    height: 25px;
+    width: 300px;
+
+}
+
+div button{
+    margin-top: 20px;
+}
+
+div input:nth-last-child(3){
+    margin-top: 10px;
+}
